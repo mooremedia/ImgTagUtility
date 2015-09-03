@@ -1,0 +1,17 @@
+﻿<Window x:Class="IMGTagUtility.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="IMG List to IMG Tag Converter" Height="350" Width="700">
+    <Grid>
+        <TextBox Name="txt_LocalImgPath" HorizontalAlignment="Left" Height="23" Margin="168,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="441"/>
+        <Label Name="lbl_LocalImgPath" Content="Full path to local images:" HorizontalAlignment="Left" Margin="19,37,0,0" VerticalAlignment="Top" Width="144"/>
+        <Button Name="btn_ConvertNow" Content="Convert now >>" HorizontalAlignment="Left" Margin="19,141,0,0" VerticalAlignment="Top" Width="117" Height="28" Click="btn_ConvertNow_Click"/>
+        <Label Name="lbl_ConversionMessage" Content="Conversion complete!" HorizontalAlignment="Left" Margin="168,141,0,0" VerticalAlignment="Top" Width="170" Foreground="Green" Visibility="Hidden"/>
+        <Label Name="lbl_ServerFolder"  Content="IMG folder on server: " HorizontalAlignment="Left" Margin="19,85,0,0" VerticalAlignment="Top" Width="144"/>
+        <TextBox Name="txt_ImgFolderOnServer" HorizontalAlignment="Left" Height="23" Margin="168,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="441"/>
+        
+        <Label Name="lbl_FullPathValidator" Content="Required" HorizontalAlignment="Left" Margin="614,40,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.486,-0.033" Foreground="Red" Visibility="Hidden"/>
+        <Label Name="lbl_ServerFolderValidator" Content="Required" HorizontalAlignment="Left" Margin="615,85,0,0" VerticalAlignment="Top" Width="59" Foreground="Red" Visibility="Hidden"/>
+
+    </Grid>
+</Window>
